@@ -8,14 +8,14 @@
     box-sizing: border-box;
 }
 
-h1,a,h2 {
+h1,h2 {
     font-family: "Arvo", serif;
     font-weight: 700;
     font-style: normal;
 }
 
 
-h3, span, label, p, button {
+h3, span, label, p, button, a,li {
     font-family: "Lato", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -109,19 +109,8 @@ ul {
   
   a:hover,
   a:focus {
-    --offset: 0.4em;
+    --offset: 1px;
     text-decoration-color: yellow;
-  }
-  
-  @supports not (background: paint(something)) {
-    a {
-      transition: text-underline-offset 400ms, text-decoration-color 400ms;
-    }
-    
-    a:hover,
-    a:focus {
-      text-underline-offset: 0.4em;
-    }
   }
   
   .wrapper {
@@ -195,49 +184,30 @@ svg {
 
 // END OF HEADER
 
-.title, h2 {
-    margin-top: 100px;
-    padding-bottom: 100px;
-    font-family: "Arvo", serif;
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-}
 
-.cham2 {
-    display: flex;
-    justify-content:space-between;
-    text-decoration: none;
-}
-
-.chamonatvali {
-    height: 93px;
-    width: 1110px;
-    border-bottom: 3px solid red;
-    margin: auto;
-}
-
-a {
-    text-decoration: none;
-    font-family: "Arvo", serif;
-    font-weight: 700;
-    font-style: normal;
-    color: black;
-    height: 89px;
-    width: 48px;
-}
-
-ul {
-    list-style: none;
-}
-
-.cham2 li:hover {
-    background-color: red;
-}
-
-.cham2 a:hover {
-    color: white;
-}
+		.menu {
+			width: 100%;
+			background-color: #ffffff;
+		}
+		.menu ul {
+			list-style-type: none;
+			padding: 0;
+			overflow: hidden;
+		}
+		.menu li {
+			float:left;
+		}
+		.menu li a {
+			display: block;
+			color: #000;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		.menu li a:hover {
+			background-color: #b60808;
+			color: #fff;
+		}
 
 
 
@@ -245,9 +215,7 @@ ul {
 
 .containerfilter {
     background-color: rgba(117, 117, 117, 0.048);
-    top: 200px;
-    left: 300px;
-    width: 238px;
+    width: 250px;
     height: 310px;
     border: 2px solid rgba(59, 59, 59, 0.253);
     border-radius: 5px;
@@ -255,12 +223,12 @@ ul {
     position: relative;
     margin-top: -150px;
     margin-left: 160px;
-  }
+}
   
   .slider-container {
     margin-bottom: 20px;
   }
-  
+
   .slider {
     width: 100%;
   }
@@ -345,12 +313,10 @@ ul {
 // MENU
 
 .meniu {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  
 }
 
 .menucard {
-  
   height: 450px;
   width: 280px;
   transition: all 0.5s ease-out;
