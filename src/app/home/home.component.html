@@ -5,14 +5,14 @@
             <div class="jj1">
             <ul class="wrapper1">
                 <li>
-                  <a class="neg" href=""><h6>Home</h6></a>
+                  <a class="neg" href="/"><h6>Home</h6></a>
                 </li>
               </ul>
             </div>
             <div class="jj2">
                 <ul class="wrapper">
                   <li>
-                    <a href="./cart/cart.component.html"><h6>Cart</h6></a>
+                    <a class="maglar" href="./cart/cart.component.html" >Cart</a>
                   </li>
                 </ul>
             </div>
@@ -49,32 +49,32 @@
 
 <!-- FILTER -->
 
-    <div class="containerfilter">
-        <p>Filter</p>
-        <div class="slider-container">
-           <p class="spicy12">Spiciness: </p>
-          <input type="range" min="1" max="4" value="1" class="slider" id="myRange">
+      <div class="filter-container">
+        <div class="filter-group">
+            <label>Spiciness:</label>
+            <input type="range" id="spiciness" min="0" max="5" value="0" class="myRange">
         </div>
-        <div class="checkbox1" onclick="toggleCheckbox(this)">
-            <input type="checkbox" id="nuts" name="nuts" value="nuts">
-            <label class="nut" for="nuts">No Nuts</label>
-        
+    
+        <div class="filter-group">
+            <label for="nuts">No Nuts:</label>
+            <input type="checkbox" id="nutsy" />
+            
+            <label for="vegetarian" class="vegat">Vegetarian Only:</label>
+            <input type="checkbox" id="vegy" />
         </div>
-        <div class="checkbox2" onclick="toggleCheckbox(this)">
-            <input type="checkbox" id="veg" name="veg" value="veg">
-            <label class="veg" for="veg">Vegetarian Only</label>
-        
+    
+        <div class="filter-group">
         </div>
-
-        <div class="red-box1">RESET</div>
-        <div class="red-box2">APPLY FILTER</div>
-      </div>
+    
+        <button class="reset-button">RESET</button>
+        <button class="apply-button">APPLY FILTER</button>
+    </div>
 
 <!-- MENU -->
 <div class="meniu">
     <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/laab_kai_chicken_salad.png"  style="width:100%">
-        <h1>Som tam papaya salad</h1>
+        <h3>Som tam papaya salad</h3>
         <p class="price">$10</p>
         <p>Spiciness: 2</p>
         <p>✔ Nuts ✔ Vegetarian</p>
@@ -83,7 +83,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/som_tam_papaya_salad.png"  style="width:100%">
-        <h1>Som tam papaya salad</h1>
+        <h3>Som tam papaya salad</h3>
         <p class="price">$9.5</p>
         <p>Spiciness: 0</p>
         <p>✖ Nuts ✔ Vegetarian</p>
@@ -92,7 +92,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"  style="width:100%">
-        <h1>Tom yam kai</h1>
+        <h3>Tom yam kai</h3>
         <p class="price">$7</p>
         <p>Spiciness: 3</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -101,7 +101,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"  style="width:100%">
-        <h1>Tom kha kai</h1>
+        <h3>Tom kha kai</h3>
         <p class="price">$7</p>
         <p>Spiciness: 3</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -110,7 +110,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/tom_kha.png"  style="width:100%">
-        <h1>Tom kha koong</h1>
+        <h3>Tom kha koong</h3>
         <p class="price">$8</p>
         <p>Spiciness: 2</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -119,7 +119,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/tom_yam.png" style="width:100%">
-        <h1>Tom yam koong</h1>
+        <h3>Tom yam koong</h3>
         <p class="price">$8</p>
         <p>Spiciness: 4</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -128,7 +128,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/tom_yam.png"  style="width:100%">
-        <h1>Tom yam vegetarian</h1>
+        <h3>Tom yam vegetarian</h3>
         <p class="price">$7</p>
         <p>Spiciness: 1</p>
         <p>✖ Nuts ✔ Vegetarian</p>
@@ -137,7 +137,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/tom_kha.png" style="width:100%">
-        <h1>Tom kha vegetarian</h1>
+        <h3>Tom kha vegetarian</h3>
         <p class="price">$7</p>
         <p>Spiciness: 1</p>
         <p>✖ Nuts ✔ Vegetarian</p>
@@ -146,7 +146,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/sweet_n_sour.png" style="width:100%">
-        <h1>Sweet 'n sour chicken</h1>
+        <h3>Sweet 'n sour chicken</h3>
         <p class="price">$14</p>
         <p>Spiciness: 2</p>
         <p>✔ Nuts ✖ Vegetarian</p>
@@ -155,7 +155,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/chicken_cashew.png" style="width:100%">
-        <h1>Chicken cashew</h1>
+        <h3>Chicken cashew</h3>
         <p class="price">$14</p>
         <p>Spiciness: 1</p>
         <p>✔ Nuts ✖ Vegetarian</p>
@@ -164,7 +164,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/kai_see_ew.png" style="width:100%">
-        <h1>Kai see ew</h1>
+        <h3>Kai see ew</h3>
         <p class="price">$14</p>
         <p>Spiciness: 4</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -173,7 +173,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/beef_massaman.png" style="width:100%">
-        <h1>Beef massaman</h1>
+        <h3>Beef massaman</h3>
         <p class="price">$14.5</p>
         <p>Spiciness: 2</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -182,7 +182,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/chu_chee.png" style="width:100%">
-        <h1>Seafood chu chee</h1>
+        <h3>Seafood chu chee</h3>
         <p class="price">$16</p>
         <p>Spiciness: 2</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -191,7 +191,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/red_curry.png" style="width:100%">
-        <h1>Penang shrimp</h1>
+        <h3>Penang shrimp</h3>
         <p class="price">$16</p>
         <p>Spiciness: 4</p>
         <p>✔ Nuts ✖ Vegetarian</p>
@@ -200,7 +200,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/green_curry.png" style="width:100%">
-        <h1>Green curry veggies</h1>
+        <h3>Green curry veggies</h3>
         <p class="price">$12.5</p>
         <p>Spiciness: 0</p>
         <p>✔ Nuts ✔ Vegetarian</p>
@@ -209,7 +209,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/tofu_cashew.png" style="width:100%">
-        <h1>Tofu cashew</h1>
+        <h3>Tofu cashew</h3>
         <p class="price">$12.5</p>
         <p>Spiciness: 0</p>
         <p>✔ Nuts ✔ Vegetarian</p>
@@ -218,7 +218,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/red_curry_vega.png" style="width:100%">
-        <h1>Red curry veggies</h1>
+        <h3>Red curry veggies</h3>
         <p class="price">$12.5</p>
         <p>Spiciness: 4</p>
         <p>✖ Nuts ✔ Vegetarian</p>
@@ -227,7 +227,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/krapau_vega.png" style="width:100%">
-        <h1>Krapau tofu</h1>
+        <h3>Krapau tofu</h3>
         <p class="price">$12.5</p>
         <p>Spiciness: 0</p>
         <p>✖ Nuts ✔ Vegetarian</p>
@@ -236,7 +236,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/kroepoek.png" style="width:100%">
-        <h1>Prawn crackers</h1>
+        <h3>Prawn crackers</h3>
         <p class="price">$2.5</p>
         <p>Spiciness: 1</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -245,7 +245,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/fish_cakes.png" style="width:100%">
-        <h1>Fish cakes</h1>
+        <h3>Fish cakes</h3>
         <p class="price">$6.5</p>
         <p>Spiciness: 1</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -254,7 +254,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/sate.png" style="width:100%">
-        <h1>Chicken satay</h1>
+        <h3>Chicken satay</h3>
         <p class="price">$6.5</p>
         <p>Spiciness: 1</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -263,7 +263,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/satesaus.png" style="width:100%">
-        <h1>Satay sauce</h1>
+        <h3>Satay sauce</h3>
         <p class="price">$1.5</p>
         <p>Spiciness: 2</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -272,7 +272,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/koong_hom_pha.png" style="width:100%">
-        <h1>Shrimp springrolls</h1>
+        <h3>Shrimp springrolls</h3>
         <p class="price">$6.5</p>
         <p>Spiciness: 3</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -281,7 +281,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/mini_vega_springrolls.png" style="width:100%">
-        <h1>Mini vegetarian spring rolls</h1>
+        <h3>Mini vegetarian spring rolls</h3>
         <p class="price">$6.5</p>
         <p>Spiciness: 2</p>
         <p>✖ Nuts ✔ Vegetarian</p>
@@ -290,7 +290,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/chicken_loempias.png" style="width:100%">
-        <h1>Chicken springrolls</h1>
+        <h3>Chicken springrolls</h3>
         <p class="price">$6.5</p>
         <p>Spiciness: 2</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -299,7 +299,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/fried_rice.png" style="width:100%">
-        <h1>Thai fried rice</h1>
+        <h3>Thai fried rice</h3>
         <p class="price">$7.5</p>
         <p>Spiciness: 2</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -308,7 +308,7 @@
 
       <div class="menucard">
         <img class="cardbg" src="https://course-jsbasic.javascript.ru/assets/products/kroepoek.png" style="width:100%">
-        <h1>Fresh prawn crackers</h1>
+        <h3>Fresh prawn crackers</h3>
         <p class="price">$2.5</p>
         <p>Spiciness: 1</p>
         <p>✖ Nuts ✖ Vegetarian</p>
@@ -316,4 +316,12 @@
       </div>
 
 
-</div>✖  ✔
+</div>
+
+<!-- END OF THE CARDS -->
+
+<footer>
+  <div class="footeri">
+    <p class="cop">© Step Ordering 2024, All rights reserved.</p>
+  </div>
+</footer>

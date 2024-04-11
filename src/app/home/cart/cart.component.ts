@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+// import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class CartComponent {
 
+  // route: ActivatedRoute = inject(ActivatedRoute);
+  // routeId: number = 2;
+
+  // charactercart:string[] = ["omg"];
+
+  // constructor() {
+  //   this.routeId = Number(this.route.snapshot.params["id"]);
+  // }
 }
